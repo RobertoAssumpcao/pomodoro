@@ -1,12 +1,14 @@
 import "./styles/theme.css";
 import "./styles/global.css";
-import { Container } from "./components/container";
-
+import { Container } from "./components/Container";
+import { Heading } from "./components/Heading";
 
 export function App() {
   return (
     <>
-      <Container>ipsum</Container>
+      <Container>
+        <Heading>Pomodoro timer</Heading>
+      </Container>
     </>
   );
 }
