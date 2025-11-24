@@ -1,18 +1,11 @@
-import { Heading } from "./components/Heading";
-import { TimerIcon } from "lucide-react";
-
 import "./styles/theme.css";
 import "./styles/global.css";
+import { Container } from "./components/Container";
 
 export function App() {
   return (
     <>
-      <Heading>
-        Pomodoro Timer
-        <button>
-          <TimerIcon />
-        </button>
-      </Heading>
+      <Container>lorem</Container>
     </>
   );
 }
