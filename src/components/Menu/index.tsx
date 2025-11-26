@@ -16,7 +16,6 @@ export function Menu() {
             <a className={styles.menuLink} href='#'>
                 <SunIcon/>
             </a>
-
         </nav>
     )
 }
