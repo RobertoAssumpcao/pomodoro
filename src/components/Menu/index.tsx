@@ -1,4 +1,10 @@
-import { HouseIcon, HistoryIcon, SettingsIcon, SunIcon } from "lucide-react";
+import {
+  HouseIcon,
+  HistoryIcon,
+  SettingsIcon,
+  SunIcon,
+  MoonIcon,
+} from "lucide-react";
 import styles from "./styles.module.css";
 import { useState, useEffect } from "react";
 
@@ -24,6 +30,11 @@ export function Menu() {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  const nextThemeIcon = {
+    dark: <SunIcon />,
+    light: <MoonIcon />,
+  };
 
   return (
     <nav className={styles.menu}>
@@ -58,7 +69,7 @@ export function Menu() {
         title="Botão para Alternar Tema"
         onClick={toggleTheme}
       >
-        <SunIcon />
+        {nextThemeIcon[theme]}
       </a>
     </nav>
   );
