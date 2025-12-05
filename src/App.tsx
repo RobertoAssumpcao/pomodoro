@@ -1,59 +1,8 @@
 import "./styles/theme.css";
 import "./styles/global.css";
 import "./App.css";
-import { Container } from "./components/Container";
-import { Logo } from "./components/Logo";
-import { Menu } from "./components/Menu";
-import { CountDown } from "./components/CountDown";
-import { PlayCircleIcon } from "lucide-react";
-import { DefaultInput } from "./components/DefaultInput";
-import { Cycles } from "./components/Cycles";
-import { DefaultButton } from "./components/DefaultButton";
-import {Footer} from "./components/Footer";
+import {Home} from "./pages/Home";
 
 export function App() {
-  return (
-    <>
-      <Container>
-        <Logo />
-      </Container>
-
-      <Container>
-        <Menu></Menu>
-      </Container>
-
-      <Container>
-        <CountDown />
-      </Container>
-
-      <Container>
-        <form className="form" action="">
-          <div className="formRow">
-            <DefaultInput
-              labelText="Task teste"
-              id="input"
-              type="text"
-              placeholder="Digite algo"
-            />
-          </div>
-
-          <div className="formRow">
-            <p>Lorem</p>
-          </div>
-
-          <div className="formRow">
-            <Cycles></Cycles>
-          </div>
-
-          <div className="formRow">
-            <DefaultButton icon={<PlayCircleIcon />}></DefaultButton>
-          </div>
-        </form>
-      </Container>
-
-      <Container>
-          <Footer></Footer>
-      </Container>
-    </>
-  );
+  return <Home/>;
 }
